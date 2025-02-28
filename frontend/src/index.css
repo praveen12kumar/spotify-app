@@ -1,0 +1,15 @@
+@import "tailwindcss";
+
+
+
+.custom-gradient-black {
+  @apply bg-gradient-to-b from-zinc-950 via-zinc-900 to-zinc-800;
+}
+
+.custom-gradient-gray {
+  @apply bg-gradient-to-b from-gray-800 via-gray-700 to-gray-700;
+}
+
+.custom-gradient-green {
+  @apply bg-gradient-to-b from-[#4C6A62]  via-[#384F4A] to-[#263733];
+}
