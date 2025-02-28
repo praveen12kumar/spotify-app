@@ -26,7 +26,9 @@ const formatTime = (seconds) => {
 export const PlayerController = () => {
   const dispatch = useDispatch();
   const { currentSong, isPlaying } = useSelector((state) => state.player);
-
+  // console.log("current SOng", currentSong);
+  // console.log("isPlaying", isPlaying);
+  
   const [currentTime, setCurrentTime] = useState(0);
   const [volume, setVolume] = useState(75); // Percentage (0-100)
   const [duration, setDuration] = useState(0);

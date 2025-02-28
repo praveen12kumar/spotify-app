@@ -12,16 +12,16 @@ const Dropdown = () => {
 
   const dropdownlist = [
     {
-      name: "Account",
-      path: "/account",
+      name: "About",
+      path: "/about",
     },
     {
       name: "Profile",
       path: "/profile",
     },
     {
-      name: "Settings",
-      path: "/settings",
+      name: "Contact",
+      path: "/contact",
     },
     {
       name: "Logout",

@@ -10,7 +10,7 @@ const initialState = {
 };
 
 export const addSong = createAsyncThunk("song/addSong", async (data, { rejectWithValue }) => {
-    console.log("data", data);
+    //console.log("data", data);
     try {
         const formData = new FormData();
         formData.append("title", data.title);
@@ -87,7 +87,7 @@ export const getTrendingSongs = createAsyncThunk('song/getTrendingSong', async (
             error: "Something went wrong",
         })
 
-        console.log("trending songs", await response);
+        //console.log("trending songs", await response);
         return (await response)?.data?.data;
     } catch (error) {
         toast.error(error?.response?.data?.message || "An error occurred");
@@ -106,7 +106,7 @@ export const getFeaturedSongs = createAsyncThunk('song/getFeaturedSong', async (
             error: "Something went wrong",
         })
 
-        console.log("featured Songs", await response);
+        //console.log("featured Songs", await response);
         return (await response)?.data?.data;
     } catch (error) {
         toast.error(error?.response?.data?.message || "An error occurred");
@@ -125,7 +125,7 @@ export const getMadeForYou = createAsyncThunk('song/getMadeForYou', async (_, { 
             error: "Something went wrong",
         })
 
-        console.log("made for you songs", await response);
+        //console.log("made for you songs", await response);
         return (await response)?.data?.data;
     } catch (error) {
         toast.error(error?.response?.data?.message || "An error occurred");

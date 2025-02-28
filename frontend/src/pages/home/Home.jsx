@@ -11,7 +11,7 @@ const Home = () => {
   const dispatch = useDispatch();
 
   const {trendingSongs, featuredSongs, madeForYouSongs} = useSelector((state)=> state.songs);
-  console.log("featuredSongs",featuredSongs);
+  //console.log("featuredSongs",featuredSongs);
   
   useEffect(()=>{
     const fetchAll = async()=>{

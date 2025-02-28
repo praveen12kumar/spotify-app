@@ -38,7 +38,7 @@ export const addAlbum = createAsyncThunk("album/addAlbum", async (data, { reject
 export const getAllAlbums = createAsyncThunk("album/getAllAlbums", async (_, { rejectWithValue }) => {
     try {
         const response = axiosInstance.get("/albums/all");
-        console.log("response album", await response);    
+        //console.log("response album", await response);    
         toast.promise(response, {
             loading: "Wait! Fetching albums...",
             success: "Albums fetched successfully",

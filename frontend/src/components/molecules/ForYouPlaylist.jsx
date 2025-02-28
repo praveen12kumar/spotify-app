@@ -3,7 +3,7 @@ import AlbumCard from '../molecules/AlbumCard';
 
 
 const ForyouPlaylist = ({songs}) => {
-    console.log("Songs", songs);
+    // console.log("Songs", songs);
     return (
     <div className='w-full flex flex-row gap-4'>
         {

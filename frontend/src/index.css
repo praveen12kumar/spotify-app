@@ -1,7 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200..1000&family=Poppins:wght@400;500;700;800;900&family=Roboto:wght@100..900&display=swap');
+
 @import "tailwindcss";
 
 
+@theme {
+  --nunito: "Nunito", sans-serif;
+  --poppins: "Poppins", sans-serif;
+  --roboto: "Roboto", sans-serif;
+}
 
+/* Custom Gradients */
 .custom-gradient-black {
   @apply bg-gradient-to-b from-zinc-950 via-zinc-900 to-zinc-800;
 }
@@ -11,5 +19,5 @@
 }
 
 .custom-gradient-green {
-  @apply bg-gradient-to-b from-[#4C6A62]  via-[#384F4A] to-[#263733];
+  @apply bg-gradient-to-b from-[#4C6A62] via-[#384F4A] to-[#263733];
 }
