@@ -6,7 +6,7 @@ import NavbarUser from "../atoms/NavbarUser";
 const Navbar = () => {
 
   return (
-    <div className="w-full h-full bg-black ">
+    <div className="w-full h-full bg-black px-10">
         <div className="w-full h-full flex flex-row items-center justify-between">
             {/*Logo */}
             
